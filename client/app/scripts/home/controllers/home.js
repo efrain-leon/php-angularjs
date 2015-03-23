@@ -4,7 +4,7 @@ angular.module('Home').controller('home', function($scope, $http) {
   
   $scope.names = [ ];
   
-	$http.get('../server/model.php').success(function(data) {
+	$http.get('../server/models/model.php').success(function(data) {
     $scope.names = eval(data);
     console.log(data)
   })

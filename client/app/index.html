@@ -42,6 +42,7 @@
               <li class="active"><a href="#/home">Home</a></li>
               <li><a ng-href="#/about">About</a></li>
               <li><a ng-href="#/">Contact</a></li>
+              <li><a href="#/people">People</a></li>
             </ul>
           </div>
         </div>
@@ -91,14 +92,25 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app/module.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     
+    <script src="scripts/core/underscore/module.js"></script>
+    
+    <script src="scripts/core/model/module.js"></script>
+    <script src="scripts/core/model/model.js"></script>
+    <script src="scripts/core/module.js"></script>
+    
     <script src="scripts/home/module.js"></script>
     <script src="scripts/home/controllers/home.js"></script>
+    
+    <script src="scripts/people/module.js"></script>
+    <script src="scripts/people/people_model.js"></script>
+    <script src="scripts/people/controllers/list.js"></script>
     <!-- endbuild -->
   </body>
 </html>

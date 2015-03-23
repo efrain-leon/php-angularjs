@@ -1,0 +1,24 @@
+<div class="jumbotron text-center">
+  <h1>Angular Test</h1>
+</div>
+
+<div class="col-sm-8 col-sm-offset-2 text-center">
+  <div class="form-group">
+    <input type="text" ng-model="nom" placeholder="Contact Name" class="form-control input-lg text-center" />
+  </div>
+    
+  <div class="form-group">
+    <input type="text" ng-model="telefon" placeholder="Phone Number" class="form-control input-lg text-center" />
+  </div>
+    
+  <div class="form-group">
+    <button class="btn btn-primary btn-lg" ng-click="addNom()">Añadir</button>
+  </div>
+  
+  <div ng-repeat="n in names">
+    <p>
+      {{n.nom}} ({{n.phone}})
+      <a href="#" ng-click="delNom(n.nom)">[X]</a>
+    </p>
+  </div>
+</div>

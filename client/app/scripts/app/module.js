@@ -17,8 +17,8 @@ angular.module('clientApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngRoute',
-    'Home'
+    'Home',
+    'People'
   ])
   .config(function ($routeProvider) {
     $routeProvider
